@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+#right{ height:auto; overflow:hidden; margin-top:10px/*width:auto;display:block;margin:10px;padding:10px;background-color:#DEFCDC; border:1px solid #17CD03;font-family:Arial, Helvetica, sans-serif */}
+
+#right label{ font:bold 12px Arial, Helvetica, sans-serif; float:left; text-align:right; width:50px;  margin-top:10px; margin-left:10px}
+#right p{ padding:4px; background-color:#E9E9E9;float:left;margin-left:10px}
+#right select{border:1px solid #A7A7A7;width:98%;padding:4px;font:bold 13px Arial, Helvetica, sans-serif}
+#right select:focus{ border:1px solid #F1C169; background-color: #FBFECD}
+#right select option{font:normal 12px Arial, Helvetica, sans-serif}
+#right .contenedor{ width:auto;background-color:#FFF;padding:1px;height:auto;overflow:hidden;clear:both;display:block;border:1px solid #CCCCCC;margin:4px}
+#right .contenedor li{ list-style:none;padding:3px;margin:2px;background-color: #EDF4FE; font:normal 10px 'tahoma',Arial, Helvetica, sans-serif} 
+#right .contenedor li:hover{ background-color:#F2F583; cursor:pointer}
+

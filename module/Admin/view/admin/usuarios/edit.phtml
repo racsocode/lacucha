@@ -1,0 +1,87 @@
+<!-- MENU IZQUIERDO -->	
+<ul  class="left">
+	<li><a href="?action=new">NUEVO</a></li>	
+	<li><a href="<?php echo $this->basePath() ?>/admin/configuracion/">LISTAR</a></li>
+</ul>
+
+<div class="contenido">
+	<div class="title-modulo"><b>» Cuentas y Accesos:</b></div>   
+		<script type="text/javascript"> 						
+			function valida_usuarios(){
+				if(document.usuarios.id_rol.value==""){
+					alert('ERROR: El campo  rol debe llenarse');
+					document.usuarios.id_rol.focus(); 
+					return false;
+				}						
+													
+				if(document.usuarios.nombre_usuario.value==""){
+					alert('ERROR: El campo nombre usuario debe llenarse');
+					document.usuarios.nombre_usuario.focus(); 
+					return false;
+				}						
+													
+				if(document.usuarios.apellidos_usuario.value==""){
+					alert('ERROR: El campo apellidos usuario debe llenarse');
+					document.usuarios.apellidos_usuario.focus(); 
+					return false;
+				}						
+												
+				if(document.usuarios.email_usuario.value==""){
+					alert('ERROR: El campo email usuario debe llenarse');
+					document.usuarios.email_usuario.focus(); 
+					return false;
+				}						
+													
+				if(document.usuarios.login_usuario.value==""){
+					alert('ERROR: El campo login usuario debe llenarse');
+					document.usuarios.login_usuario.focus(); 
+					return false;
+				}						
+													
+				if(document.usuarios.password_usuario.value==""){
+					alert('ERROR: El campo password usuario debe llenarse');
+					document.usuarios.password_usuario.focus(); 
+					return false;
+				}						
+				
+				document.usuarios.action="usuarios.php?action=update&id=1";
+				document.usuarios.submit();
+			}			
+		</script>  
+
+
+	<fieldset id="crud">
+		<legend>Editar Registro</legend>			
+		<form name="usuarios" method="post" action=""> 
+			<input type="reset" name="cancelar" value="CANCELAR" class="button">  
+			<input type="button" name="actualizar" value="ACTUALIZAR" onclick="return valida_usuarios()" class="button">
+			<br clear="all">
+
+			<label>  Rol: </label> 
+			<select name="id_rol" id="id_rol">
+				<option value=""> Seleccione rol</option>
+				<option value="1" selected="selected">Administrador</option>
+			</select>
+			<br>
+
+			<label> Nombre Usuario: </label>
+			<input type="text" name="nombre_usuario" value="Oscar Javier" class="input" maxlength="50"><br>
+
+			<label> Apellidos Usuario: </label> 
+			<input type="text" name="apellidos_usuario" value="Rodriguez" class="input" maxlength="50"><br>
+
+			<label> Email Usuario: </label> 
+			<input type="text" name="email_usuario" value="orodriguez@racsocode.com" class="input" maxlength="50"><br>
+
+			<label> Login Usuario: </label> 
+			<input type="text" name="login_usuario" value="admin" class="input" maxlength="20"><br>
+
+			<label> Password Usuario: </label> 
+			<input type="text" name="password_usuario" value="123456" class="input" maxlength="20"><br>
+		</form>
+	</fieldset>
+</div>
+
+<div class="funcionalidad">
+    
+</div>

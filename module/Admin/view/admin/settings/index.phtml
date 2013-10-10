@@ -1,0 +1,50 @@
+<!-- MENU IZQUIERDO -->	
+<ul  class="left">
+	<li> 
+		<a href="<?php echo $this->basePath() ?>/admin/configuracion/">LISTAR</a>
+	</li>
+</ul>
+
+<div class="contenido">
+	<div class="title-modulo">
+		<a href="<?php $_SERVER['PHP_SELF'] ?>"> &raquo; La configuración del Sistema:</a>
+	</div>  
+
+	<div id="content-area">	
+		<?php ?>
+		<div id="error">Se actualizó correctamente.</div>
+		<table id="listado" cellpading="1" cellspacing="1">
+			<thead>
+				<tr>
+					<th class="titulo"><a>Nombre </a></th>
+					<th class="titulo"><a>Valor </a></th>
+					<th class="titulo" align="center" width="98">Opciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					$count = 0; 
+				foreach ($this->datos as $dato){ 
+						if ($count%2==0){ 
+							$fila ="fila1"; 
+						}else { 
+							$fila ="fila2"; 
+						}
+				?>
+					<tr class="<?php echo $fila ?>"> 
+						<td align="left" class="celda"><?php echo $dato["nombre_configuracion"] ?></td>
+						<td align="left" class="celda"><?php echo $dato["valor_configuracion"] ?></td>
+
+						<td align="center">
+							<a href="<?php echo $this->basePath() ?>/admin/configuracion/edit/<?php echo $dato["id_configuracion"] ?>" class="tooltip" original-title="Editar">
+								<img src="<?php echo $this->basePath()?>/imgs/admin/button_edit.png">
+							</a> &nbsp; 
+						</td>
+					</tr>
+				<?php 
+					$count++;
+				} ?>
+			</tbody>
+		</table>
+	</div>
+</div>	

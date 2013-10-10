@@ -1,0 +1,25 @@
+<!-- MENU IZQUIERDO -->	
+<ul  class="left">
+	<li> 
+		<a href="<?php echo $this->basePath() ?>/admin/configuracion/">LISTAR</a>
+	</li>
+</ul>
+
+<div class="contenido">
+	<div class="title-modulo">
+		<a href="<?php $_SERVER['PHP_SELF'] ?>"> &raquo; La configuración del Sistema:</a>
+	</div>  
+
+<fieldset id="crud"> 
+	<legend class="titulo"> EDITAR CONFIGURACION DEL SISTEMA </legend> 
+		<form name="f1" action="<?php echo $this->basePath() ?>/admin/configuracion/update/<?php echo $dato["id_configuracion"] ?>" method="post">
+			<input type="reset" name="limpia" value="LIMPIAR" class="button">  
+			<input type="submit" name="guarda" value="GUARDAR" class="button"> 	
+			<br clear="all"> 	
+			<label> NOMBRE SITIO : </label> 
+			<input type="text" name="nombre_sitio" value="<?php echo $dato["nombre_configuracion"] ?>" class="input"><br>  
+			<label> EMAIL CONTACTENOS : </label> 
+			<input type="text" name="email_contactenos" value="<?php echo $dato["valor_configuracion"] ?>" class="input"><br> 			
+		</form>
+	</fieldset>
+</div>	

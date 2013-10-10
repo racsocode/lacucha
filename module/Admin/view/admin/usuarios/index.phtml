@@ -1,0 +1,61 @@
+<!-- MENU IZQUIERDO -->	
+<ul  class="left">
+	<li><a href="<?php echo $this->basePath() ?>/admin/usuarios/new">NUEVO</a></li>
+	<li><a href="<?php echo $this->basePath() ?>/admin/usuarios/">LISTAR</a></li>
+</ul>
+
+<div class="contenido">
+	<div class="title-modulo"><b>» Cuentas y Accesos:</b></div>	
+
+	<div id="content-area">	
+		<?php ?>
+		<div id="error">Se actualizó correctamente.</div>
+
+		<table id="listado" cellpading="1" cellspacing="1">
+			<thead>
+				<tr>
+					<th class="titulo"><a>Nombre </a></th>
+					<th class="titulo"><a>Apellidos </a></th>
+					<th class="titulo"><a>Email </a></th>
+					<th class="titulo"><a>Login </a></th>
+					<th class="titulo" align="center" width="98">Opciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					$count = 0; 
+				foreach ($this->datos as $dato){ 
+						if ($count%2==0){ 
+							$fila ="fila1"; 
+						}else { 
+							$fila ="fila2"; 
+						}
+				?>				
+				<tr class="<?php echo $fila ?>"> 
+					<td align="left" class="celda"><?php echo $dato["nombre_usuario"] ?></td>
+					<td align="left" class="celda"><?php echo $dato["apellidos_usuario"] ?></td>
+					<td align="left" class="celda"><?php echo $dato["email_usuario"] ?></td>
+					<td align="left" class="celda"><?php echo $dato["login_usuario"] ?></td>
+					<td align="center">
+						<a href="<?php echo $this->basePath() ?>/admin/usuarios/edit/<?php echo $dato["id_usuario"] ?>" class="tooltip" original-title="Editar">
+							<img src="<?php echo $this->basePath()?>/imgs/admin/button_edit.png">
+						</a> &nbsp; 
+						<a href="#" onclick="mantenimiento('usuarios.php',1,'delete')" class="tooltip" original-title="Eliminar">
+							<img src="<?php echo $this->basePath()?>/imgs/admin/button_drop.png">
+						</a>&nbsp; 
+						<a href="<?php echo $this->basePath() ?>/admin/usuarios/accesos/<?php echo $dato["id_usuario"] ?>" class="tooltip" original-title="Detalle">
+							<img src="<?php echo $this->basePath()?>/imgs/admin/index.gif">
+						</a>
+						<a href="vista_usuario.php?action=view&amp;id=1" target="vista" title="Vista Previa">
+							<img src="<?php echo $this->basePath()?>/imgs/admin/view.gif">
+						</a>
+					</td>
+				</tr>
+				<?php 
+					$count++;
+				} ?>
+
+			</tbody>
+		</table>
+	</div>
+</div>	

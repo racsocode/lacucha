@@ -1,0 +1,98 @@
+<!-- MENU IZQUIERDO -->	
+<ul  class="left">
+	<li><a href="<?php echo $this->basePath() ?>/admin/usuarios/">LISTAR</a></li>
+</ul>
+
+<div class="contenido"> 
+	<div id="content-area">
+		<form name="f1" action="" method="post">		
+			<table id="listado">
+				<tbody>
+					<tr>
+						<td class="titulo"> MODULO </td>
+						<td class="titulo"> PAGINAS </td>
+						<td class="titulo"> URL </td>
+						<td class="titulo">Activar</td>
+					</tr>
+					<tr class="fila1">
+						<td align="left" class="celda">Inicio</td>
+						<td align="left" class="celda">Inicio</td>
+						<td align="left" class="celda">index.php</td>
+						<td>
+							<input type="checkbox" name="seccion[]" value="1" checked="">
+						</td>
+					</tr>
+						<tr class="fila2">
+							<td align="left" class="celda">Inicio</td>
+							<td align="left" class="celda">Configuración de Sitio</td>
+							<td align="left" class="celda">configuracion.php</td>
+							<td><input type="checkbox" name="seccion[]" value="2" checked=""></td>
+						</tr>						
+						<tr class="fila1">
+							<td align="left" class="celda">Inicio</td>
+							<td align="left" class="celda">Cuentas y Accesos</td>
+							<td align="left" class="celda">usuarios.php</td>
+							<td><input type="checkbox" name="seccion[]" value="3" checked=""></td>
+						</tr>						
+						<tr class="fila2"> 							
+							<td align="left" class="celda">Administrar</td>							
+							<td align="left" class="celda">Banners</td>	
+							<td align="left" class="celda">banners.php</td>
+							<td><input type="checkbox" name="seccion[]" value="4" checked=""></td>
+						</tr>				
+						<tr class="fila1"> 
+							<td align="left" class="celda">Administrar</td>
+							<td align="left" class="celda">MiniBanners</td>
+							<td align="left" class="celda">mini_banner.php</td>
+							<td><input type="checkbox" name="seccion[]" value="5" checked=""></td>
+						</tr>						
+						<tr class="fila2">
+							<td align="left" class="celda">Administrar</td>
+							<td align="left" class="celda">Galeria Historia</td>
+							<td align="left" class="celda">galerias.php</td>
+							<td><input type="checkbox" name="seccion[]" value="7" checked=""></td>
+						</tr>
+						<tr class="fila1">
+							<td align="left" class="celda">Administrar</td>
+							<td align="left" class="celda">Productos</td>
+							<td align="left" class="celda">productos.php?cat=0</td>
+							<td><input type="checkbox" name="seccion[]" value="8" checked=""></td>
+						</tr>						
+						<tr class="fila2">
+							<td align="left" class="celda">Administrar</td>
+							<td align="left" class="celda">Musica en Vivo</td>
+							<td align="left" class="celda">musica.php</td>
+							<td><input type="checkbox" name="seccion[]" value="9" checked=""></td>
+						</tr>
+						<tr class="fila1">
+							<td align="left" class="celda">Administrar</td>
+							<td align="left" class="celda">Lonche</td>
+							<td align="left" class="celda">lonches.php</td>
+							<td><input type="checkbox" name="seccion[]" value="11" checked=""></td>
+						</tr>		
+						<tr class="fila2">
+							<td align="left" class="celda">Administrar</td>
+							<td align="left" class="celda">Publicaciones</td>
+							<td align="left" class="celda">publicaciones.php</td>
+							<td><input type="checkbox" name="seccion[]" value="10" checked=""></td>
+						</tr>
+						<tr class="fila1">
+							<td align="left" class="celda">Herramientas</td>
+							<td align="left" class="celda">Boletines</td>
+							<td align="left" class="celda">boletines.php</td>
+							<td><input type="checkbox" name="seccion[]" value="6" checked=""></td>
+						</tr>					
+				<tr bgcolor="#EEEEEE">
+					<td colspan="4" align="center" style="padding-top:20px; padding-bottom:20px">
+						<input type="submit" name="guardar" value="GUARDAR" onclick="void(document.f1.action='accesos.php?id1=1&amp;action=add');void(document.f1.submit())"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancelar" value="CANCELAR"></td>
+					</tr>					
+				</tbody>
+			</table>
+		</form>	
+	</div>						 
+</div>
+
+<div class="funcionalidad">
+    
+</div>

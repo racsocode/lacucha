@@ -1,0 +1,91 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this
+                    ->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                    ->prependStylesheet($this->basePath().'/css/admin/admin.css')
+                    ->prependStylesheet($this->basePath().'/css/admin/form.css') 
+                    ->prependStylesheet($this->basePath().'/css/admin/listado.css')
+                    ->prependStylesheet($this->basePath().'/css/admin/right.css')     
+        ?>                       
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+                    ->prependFile($this->basePath().'/js/admin/jquery.dataTables.js') 
+                    ->prependFile($this->basePath().'/js/admin/jquery.jeditable.mini.js') 
+                    ->prependFile($this->basePath().'/js/admin/jquery.clearfield.packed.js') 
+                    ->prependFile($this->basePath().'/js/admin/jquery.tipsy.js') 
+                    ->prependFile($this->basePath().'/js/admin/form.js') 
+                    ->prependFile($this->basePath().'/js/admin/admin.js') 
+                    ->prependFile($this->basePath().'/js/admin/reporte.js') 
+                    ->prependFile($this->basePath().'/js/admin/jquery-ui-1.8.5.custom.min.js') 
+                    ->prependFile($this->basePath().'/js/jquery-1.4.4.min.js') 
+        ?>
+
+    </head>
+    <body>
+        <!-- PAGINA -->
+        <div id="pagina" >  
+            <!-- CABECERA -->
+            <div class="cabecera">  
+
+            </div>
+            <!-- MENU IZQUIERDO -->
+            <?php //echo $this->navigation('navigation')->menu(); ?>
+            <ul class="menu-superior">              
+                <li>                                    
+                    <ul></ul> 
+                </li>               
+                <li>Inicio                                 
+                    <ul><li>Inicio</li>
+                        <li><a href="configuracion.php">Configuracion del sitio</a></li>
+                        <li><a href="usuarios.php">  Administracion de usuarios </a></li>                   
+                    </ul> 
+                </li>               
+                <li>Administrar                                    
+                    <ul><li><a href="productos.php?cat=0">Ya es Hora de... </a></li> 
+                        <li><a href="banners.php">Banners </a></li> 
+                        <li><a href="clientes.php">Clientes </a></li>                             
+                        <li><a href="archivos.php">Archivos de Presentación </a></li>                             
+                        <li><a href="revista.php">Revistas </a></li>                              
+                        <li><a href="publicidad.php">Anuncios </a></li>                   
+                    </ul> 
+                </li>               
+                <li>Ordenes                                    
+                    <ul><li><a href="pedidos.php">Pedidos</a></li></ul> 
+                </li>               
+                <li> Herramientas                                   
+                    <ul><li><a href="boletines.php">Newsletter</a></li></ul> 
+                </li>               
+                <li> Reportes                                   
+                    <ul><li><a href="rpedidos.php">  Reporte de Pedidos </a></li>                   
+                    </ul> 
+                </li>   
+                <li><a href="/llorens/dw-admin/index.php?action=logout"> Sortie </a> </li>      
+            </ul>
+
+            <div id="info_user">
+                <span class="user tooltip" original-title="Usuario Actual">Manager - Oscar Javier&nbsp;&nbsp;&nbsp;</span>
+            </div>            
+            
+            <!-- CUERPO -->
+            <div class="cuerpo">
+            <!-- MENU SUPERIOR --> 
+                <ul class="left"> </ul>
+                <?php echo $this->content; ?>
+
+            </div>  
+        </div>        
+
+        <!-- PIE DE PAGINA -->  
+        <div id="bottom">Powered by <a href="http://www.google.com/" target="_blank">Eureka</a> &copy; <?php echo date("Y") ?></div> 
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>

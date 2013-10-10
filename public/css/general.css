@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Hattori_Hanzo';
+    src: url('../font/Hattori_Hanzo-webfont.eot');
+    src: url('../font/Hattori_Hanzo-webfont.eot?#iefix') format('eot'),
+         url('../font/Hattori_Hanzo-webfont.woff') format('woff'),
+         url('../font/Hattori_Hanzo-webfont.ttf') format('truetype'),
+         url('../font/Hattori_Hanzo-webfont.svg#webfontMI2Bhqsh') format('svg');
+    font-weight:bold;
+    font-style:bold;
+
+}
+
+/*html{ margin:0px; padding:0px; height:100%}*/
+body{  margin:0; padding:0; background:#fff url(../imgs/body.jpg) repeat-x }
+img{ border:0} 
+input{ /*margin:0 0 3px 0;color:#171717;border:0; padding:2px 0 0 5px; */outline:0px;}
+textarea{ border:0;color:#171717;outline:0px}
+select{ }
+ul,li{ padding:0; margin:0} 
+h1,h2,h3{ margin:0;}
+a{ border:0; outline:0px;}
+.clear{ clear:both}
+form{ margin:0; padding:0; height:auto; overflow: inherit}
+label{ float:left;width:120px;text-align:left;margin-bottom:4px; margin-top:4px;clear:both; font:bold 12px Arial, Helvetica, sans-serif;color:#BE0004; background:url(../imgs/list.jpg) no-repeat left center; padding-left:10px;}
+
+.line_bottom{ width:100%; border-bottom:5px solid #6A2369; position:absolute; bottom:0;}

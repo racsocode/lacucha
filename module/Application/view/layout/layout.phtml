@@ -1,0 +1,294 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                      ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.min.js') ?>
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Skeleton Application') ?></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <?php echo $this->content; ?>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+            </footer>
+        </div> <!-- /container -->
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
+
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> ::    LLORENS Revista Inmobiliaria    :: </title>
+<link href="aplication/webroot/css/core.css" rel="stylesheet" type="text/css" />
+<link href="aplication/webroot/css/message.css" rel="stylesheet" type="text/css" />
+<link href="aplication/webroot/css/screen.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="aplication/webroot/css/colorbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="aplication/webroot/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="aplication/webroot/js/js.js"></script>
+<script type="text/javascript" src="aplication/webroot/js/AC_RunActiveContent.js"></script>
+<script type="text/javascript" src="aplication/webroot/js/messages.js"></script>
+<script type="text/javascript" src="aplication/webroot/js/easySlider1.7.js"></script>
+<script type="text/javascript" src="aplication/webroot/js/jquery.watermarkinput.js"></script>
+
+</head>
+
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+    <!-- Le styles -->
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                    ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                    ->prependStylesheet($this->basePath() . '/css/style.css')
+                    ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+    <!-- Scripts -->
+    <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                  ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                                  ->prependFile($this->basePath() . '/js/jquery.min.js') ?>
+
+</head>
+
+<body>
+<div id="window">
+    <div id="pagina">
+    
+        <div id="cabecera">
+                <div id="logo">
+                    <img src="aplication/webroot/imgs/logo.jpg" alt="logo" />
+                </div>
+                <div class="redes">
+                    <a href="" class="twtter"></a>
+                    <a href="" class="facebook"></a>
+                </div>
+                <div id="menu">
+                    <a href="index.html" id="active">Inicio</a>
+                    <a href="quienes_somos.html">Quiénes somos</a>
+                    <a href="publicaciones.html">Publicaciones</a>
+                    <a href="tarifas.html" >Tarifas</a>
+                    <a href="p_distribucion">P. de distribución</a>
+                    <a href="contactenos.html">Contáctenos</a>
+                </div>
+                <div class="clear"></div>
+                <div class="cont_controles">
+                    <div class="top_login">
+                        <form>
+                            <label class="label_login">Ingresar a tu cuenta:</label>
+                            <input type="text" name="Email" id="Email" class="input_login" />
+                            <input type="password" name="Pasword" id="Pasword" class="input_login" />
+                            <input type="submit" value="Enviar" class="btn_login" />
+                            <a href="registro.php" class="enlace_registro">Regístrate</a>
+                        </form>
+                    
+                    </div>
+                    <div class="top_buscar">
+                        <form>
+                            <input type="text" class="input_buscar"  name="buscar" id="buscar" />
+                            <input type="submit" class="btn_buscar" value="buscar" />
+                        </form>
+                    </div>
+                </div>
+         </div>
+         
+         <div id="cuerpo">
+         
+            <div class="contenedor_gal">
+            <div id="slider">
+                <ul>                
+                     <li>
+                        <div class="principales">
+                        <div class="bg_image_carucel">
+                            <div class="image_carrucel"><img src="aplication/webroot/imgs/catalogo/image1.jpg" alt="image" /></div>
+                        </div>
+                        <a href="seguimiento_en_linea.php">POLITICA</a>
+                        </div>
+                        <div class="principales">
+                        <div class="bg_image_carucel">
+                            <div class="image_carrucel"><img src="aplication/webroot/imgs/catalogo/image1.jpg" alt="image" /></div>
+                        </div>
+                        <a href="seguimiento_en_linea.php">POLITICA</a>
+                        </div>
+                        <div class="principales">
+                        <div class="bg_image_carucel">
+                            <div class="image_carrucel"><img src="aplication/webroot/imgs/catalogo/image1.jpg" alt="image" /></div>
+                        </div>
+                        <a href="seguimiento_en_linea.php">POLITICA</a>
+                        </div>
+                        <div class="principales">
+                        <div class="bg_image_carucel">
+                            <div class="image_carrucel"><img src="aplication/webroot/imgs/catalogo/image1.jpg" alt="image" /></div>
+                        </div>
+                        <a href="seguimiento_en_linea.php">POLITICA</a>
+                        </div>
+                        <div class="principales">
+                        <div class="bg_image_carucel">
+                            <div class="image_carrucel"><img src="aplication/webroot/imgs/catalogo/image1.jpg" alt="image" /></div>
+                        </div>
+                        <a href="seguimiento_en_linea.php">POLITICA</a>
+                        </div>
+                        
+                     </li>  
+                </ul>
+            </div>
+        </div>
+        
+        <div class="linea_carrucel"><img src="aplication/webroot/imgs/linea_carrucel.jpg" alt="liena" /></div>
+        
+        <div class="actualizaciones">
+            <div id="edicion"><img src="aplication/webroot/imgs/actualizaciones.jpg" /></div>
+            <div id="banner"><img src="aplication/webroot/imgs/banner.jpg" alt="banner" /></div>
+        </div>
+          <div class="linea_carrucel"><img src="aplication/webroot/imgs/linea_carrucel.jpg" alt="liena" /></div>
+          <div class="titulo_articulos">
+             <span class="item_articulos"> </span>
+             <span class="item_negro">ÚLTIMOS ARTÍCULOS </span>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion centar_margin">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion centar_margin">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion centar_margin">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+          <div class="ultimos_actualizacion">
+            <div class="image_actial"><a href=""><img src="aplication/webroot/imgs/catalogo/act01.jpg" alt="artículos" /></a></div>
+            <div class="parrafo_not">
+                <h6>POLITICA</h6>
+                <a href="">Nulla tincidunt elit in enim</a>
+                <div class="texto_actul">Suspendisse nulla libero, mollis non  sed, ultricies sit amet elit. Etiam scelerisque suscipit ipsum...</div>
+                <a href="" class="ver_mas">Ver Más </a>
+            </div>
+          </div>
+          
+          
+         </div>
+    </div>
+    <div id="bottom">
+           <div id="footer">
+                <div id="menu_bottom"><a href="" id="men_active">Inicio</a> | <a href="">Quiénes somos</a> | <a href="">Tarifas</a> | <a href=""> Publicaciones </a> | <a href="">Puntos de distribución</a> | <a href="">Contáctenos</a></div>
+                <div class="copyright">© 2011 LLORENS. Todos los derechos reservados</div> 
+                <div class="powered">Desarrollo por: <a href="http://www.develoweb.net" target="_blank">Develoweb</a></div>           
+            </div>
+       </div>
+</div>         
+</body>
+</html>

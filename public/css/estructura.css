@@ -1,0 +1,95 @@
+/* CSS Document */
+#window{ width:100%; height:100% ; margin:0; padding:0; background:url(../imgs/window.jpg) no-repeat center top}
+#pagina{ margin:0 auto 0 auto; width:1009px; height:auto;  font:normal 12px Arial, Helvetica, sans-serif; color:#676767; position:relative; top:0; left:0;}
+#pagina  h1{ font:normal 19px Arial, Helvetica, sans-serif; margin:0px 0 0 0px; color:#940000 }
+
+#cabecera{ overflow:hidden; width:100%; height:auto; padding-top:18px; position:relative}
+#logo{ float:left; width:200px; height:99px; margin:10px 0 0 0}
+.redes{ width:270px;position:absolute; top:86px; left:758px;}
+.redes .idioma{ display:block; float:left; width:20px; height:16px; margin:0 0 0 8px;}
+.redes div{ display:block; float:left; width:130px; height:16px; margin:0 0 0 8px;}
+.redes a{ color:#069; font: bold 12px Verdana, Geneva, sans-serif;}
+.redes .twtter, .facebook{ display:block; float:left; width:16px; height:16px; margin:0 0 0 8px;text-align:right;}
+.redes a:hover{ background-position:0 -17px}
+.twtter{ background:url(../imgs/twtter.png) no-repeat}
+.facebook{ background:url(../imgs/facebook.png) no-repeat}
+#menu{ float:right; width:668px; height:auto; margin:89px 0 0 0 }
+#menu a{float:left; display:block; width:110px; height:24px; font:bold 11px Tahoma, Geneva, sans-serif; background:url(../imgs/bg_men.png) no-repeat -110px 0; text-decoration:none; color:#fff; text-align:center; padding-top:4px; margin:0 0 0 1px}
+#menu a:hover{ background-position:1px 0}
+#menu  #active{background-position:1px 0}
+
+.cont_controles{ overflow:auto; width:100%; margin:10px 0 10px 0}
+.top_login{ float:left; width:700px; height:auto;}
+.label_login{ float:left; width:125px; height:auto; font:bold 11px Tahoma, Geneva, sans-serif; color:#fff; background:none}
+.input_login{ float:left; width:144px; height:20px; margin:0 10px 0 10px; padding:0 4px 0 4px; background:url(../imgs/input_login.jpg) no-repeat; border:0px}
+.btn_login{ cursor:pointer; width:53px; height:20px; border:0px; background:url(../imgs/btn_login.png) no-repeat; font:bold 11px  Tahoma, Geneva, sans-serif; color:#FFF; padding-bottom:3px; margin:0 0 0 5px}
+.btn_login:hover{ background-position:0 -20px}
+.enlace_registro{ text-decoration:underline; font:bold 11px  Tahoma, Geneva, sans-serif; color:#EA7577; margin-left:35px;}
+.top_buscar{ float:right;}
+.input_buscar{ float:left; width:166px; height:20px; border:0; background:url(../imgs/input_buscar.jpg) no-repeat; padding:0 4px 0 4px}
+.btn_buscar{ float:left;width:59px; height:20px;border:0px; cursor:pointer; padding-bottom:3px;font:bold 11px  Tahoma, Geneva, sans-serif; color:#FFF; background:url(../imgs/btn_buscar.png) no-repeat; margin:0 0 0 0}
+.btn_buscar:hover{ background-position:0 -20px; }
+
+#cuerpo{ width:1009px; height:auto;position:relative}
+.contenedor_gal{ position:relative; margin:8px 0 10px 0; padding-left:20px}
+.principales{float:left; width:156px; height:auto; text-align:center;margin:0px 10px 0 14px;}
+.principales a{ text-decoration:underline; font:bold 10px  Tahoma, Geneva, sans-serif;color:#D60006;}
+.bg_image_carucel{  width:153px; height:68px; overflow:hidden; float:left; border:1px solid #E2E2E2; text-align:center; margin-bottom:5px}
+.image_carrucel{ width:151px; height:66px; margin:1px 0 0 1px; overflow:hidden;}
+.linea_carrucel{ margin:10px 0 0 10px 0}
+
+.actualizaciones{ overflow:hidden; height:auto; width:100%; margin:15px 0 18px 0}
+#edicion{ float:left;width:446px; height:252px; margin-right:16px; border:3px solid #313131; background:#414141}
+.image_ultima_ed{ float:left; width:187px; height:252px; overflow:hidden;}
+.textos_ultima_edi{ float:left; width:230px; height:auto; margin:0 0 0 16px; font:normal 11px Arial, Helvetica, sans-serif; color:#AAAAAA;}
+.t_ultima_edi{ width:220px; height:29px; background:url(../imgs/t_ultima_edi.png) no-repeat ;padding:3px 0 0 10px; margin-top:2px;}
+.color_fach_ult{ color:#151515; margin:6px  0 3px 0}
+.textos_ultima_edi ul{ margin:0 0 8px 10px}
+.textos_ultima_edi li{ list-style-image:url(../imgs/vinieta_negro.jpg); font:normal 11px Tahoma, Geneva, sans-serif;color:#151515; margin-bottom:2px}
+.textos_ultima_edi a{ text-decoration:underline;font:normal 11px Tahoma, Geneva, sans-serif; color:#151515}
+.textos_ultima_edi a:hover{ color:#242424}
+.textos_ultima_edi .mas_revistas_home{ font:bold 11px  Tahoma, Geneva, sans-serif; color:#F8C103; text-decoration:underline; margin:5px 0 0 146px}
+.textos_ultima_edi .mas_revistas_home:hover{ color:#FEDA5C}
+
+#banner{ float:left; width:534px; height:252px; border:3px solid #313131}
+.titulo_articulos{ overflow:hidden; margin:12px 0 10px 0}
+.item_articulos{ float:left;display:block; width:9px; height:30px; background:url(../imgs/item.jpg) no-repeat}
+.item_negro{ float:left; display:block; font:bold 11px  Tahoma, Geneva, sans-serif; color:#fff; width:999px; padding-top:3px; height:18px; background:#000}
+
+.ultimos_actualizacion{ float:left; width:325px; height:auto; margin-bottom:20px; text-align:justify}
+.image_actial{ float:left; width:120px; height:79px; border:1px solid #E2E2E2}
+.image_actial a{ display:block; width:118px; height:77px; margin:1px 0 0 1px}
+.parrafo_not{ float:left; width:191px; height:auto; margin:0 0 0 8px}
+.parrafo_not h6{ font:bold 10px  Tahoma, Geneva, sans-serif; color:#9D9C9C; margin:0 0 1px 0}
+.parrafo_not a{ text-decoration:underline; font:bold 11px  Tahoma, Geneva, sans-serif; color:#A30005}
+.parrafo_not a:hover{ color:#CC0005}
+.texto_actul{ font:normal 11px Arial, Helvetica, sans-serif; color:#7E7E7E}
+.parrafo_not .ver_mas{ float:right; margin-right:4px; color:#BB0004}
+.parrafo_not .ver_mas:hover{ color:#FF0006}
+.centar_margin{margin:0 17px 0 17px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bottom{width:100%; height:68px; overflow:hidden; background:url(../imgs/bottom.jpg) repeat-x; font:normal 11px Arial, Helvetica, sans-serif; color:#98B4CC}
+#footer{width:1009px; margin:0 auto 0 auto; height:107px; overflow:hidden;font:normal 11px Arial, Helvetica, sans-serif;color:#686868; }
+#menu_bottom{font:normal 11px Arial, Helvetica, sans-serif;color:#686868; padding:14px 0 0 20px; }
+#menu_bottom a{ font:normal 11px  Arial, Helvetica, sans-serif; text-decoration:none;color:#686868; padding:0 30px 0 30px}
+#menu_bottom a:hover{ color:#FFF; text-decoration:underline;}
+#menu_bottom  #men_active{ color:#fff}
+.copyright{float:left; width:320px; height:auto;  margin-top:12px}
+.powered{float:right; width:134px; height:auto;margin:12px 0 0 0px; }
+.powered a{ text-decoration:none; font:normal 11px Arial, Helvetica, sans-serif; color:#686868 }
+.powered a:hover{ color:#7C7C7C}
+
+

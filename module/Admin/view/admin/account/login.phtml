@@ -1,0 +1,48 @@
+﻿<h1>Acceso Administrador</h1>
+    <?php
+        $form = $this->form;
+        $form->prepare();     
+
+        $form->setAttributes(array(
+                "action" => $this->basePath().'/admin/cuenta/validar',
+                //"action" => $this->url('/admin/cuenta/validar', array('controller'=>'account', 'action' => 'validar')),
+                'method' => 'post',
+                'enctype'=>'multipart/form-data'
+
+            )
+        );     
+
+        echo $this->form()->openTag($form);
+    ?>
+
+    <div id="email">
+        <fieldset id="user-email">
+            <p><label>Usuario:<span>
+                <?php echo $this->formText($form->get('username'));?>
+                <?php echo $this->formElementErrors($form->get('username'));?>
+            </span></label></p>
+        </fieldset>
+    </div>
+    <div id="password">
+        <fieldset id="user-password">
+            <p>
+                <strong><a href = "<?php echo $this->basePath()?>/admin/cuenta/recuperar">Olvidé mi contraseña</a></strong>
+                <label>Password:<span>
+                    <?php echo $this->formText($form->get('password'));?></span>
+                    <?php echo $this->formElementErrors($form->get('password'));?>
+                </label>
+            </p>
+            <?php $this->formHidden($form->get('csrfcheck'));?>
+            <?php echo $this->formElementErrors($form->get('csrfcheck')); ?>
+
+        </fieldset>
+        <p>
+            <label id="remember-password"><?php echo $this->formCheckbox($form->get('rememberme'));?>Recordarme por 30 días</label>
+                <?php echo $this->formSubmit($form->get('submit')); ?>
+            <input type="image" id="sign-in" name="enviar" src="<?php echo $this->basePath() ?>/imgs/admin/entrar.jpg" alt="Sign In" tabindex="3">
+        </p>
+    </div>
+
+<?php
+    echo $this->form()->closeTag();
+?>

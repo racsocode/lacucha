@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+#crud{ width:96%;margin:2px auto; text-align:left; height:580px; overflow-y:auto}
+#crud select{border:1px solid #7F9DB9;width:400px;margin:3px;padding:3px;}
+#crud select:focus{ border:1px solid #F1C169; background-color: #FBFECD}
+#crud .input{ border:1px solid #7F9DB9;width:400px;margin:3px;padding:3px; }
+#crud .input-auto{ border:1px solid #7F9DB9;margin:3px;padding:3px; }
+#crud .input:focus{  border:1px solid #F1C169; background-color: #FBFECD}
+#crud .textarea{border:1px solid #7F9DB9;width:400px; height:150px;margin:3px;padding:3px;}
+#crud .textarea:focus{ border:1px solid #F1C169;background-color:#FBFECD;width:500px;color:#003366;line-height:19px }
+#crud .num{border:1px solid #7F9DB9;width:125px;margin:3px;padding:3px;}
+#crud .date{border:1px solid #7F9DB9;width:125px; margin:3px;padding:3px; margin-right:0}
+#crud .btn_date{border:1px solid #7F9DB9;width:25px; margin:3px;padding:3px; margin-left:0}
+#crud td{ padding:2px}
+#crud .fila_check{ width:80%}
+#crud .fila_check:hover{background-color:#F2F583; width:80%; cursor:pointer}
+#crud .button{ border:1px solid #999;border-left:1px solid #FFF;border-top:1px solid #FFF;background-color:#FFE055;margin:0 5px;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#2D4085; float:right; height:23px}
+#crud .button:hover{ background-color:#66CCCC;cursor:pointer;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif;}
+
+#crud .input-auto{ border:1px solid #7F9DB9;margin:3px;padding:3px; }
+#crud .input-auto:focus{  border:1px solid #F1C169; background-color: #FBFECD}
+
+
+#table_ofertas{border:1px solid #3C88D5; border-collapse:collapse;}
+#table_ofertas .title_ofertas{color:#FFF; font:bold 11px tahoma; background-color:#3C88D5; text-align:center; padding:3px}
+#table_ofertas .button{ border:1px solid #999;border-left:1px solid #FFF;border-top:1px solid #FFF;background-color:#FFE055;margin:0 5px;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#2D4085; float:right; height:23px}
+#table_ofertas .button:hover{ background-color:#66CCCC;cursor:pointer;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif;}
+#table_ofertas select{border:1px solid #7F9DB9;width:400px;margin:3px;padding:3px;}
+#table_ofertas select:focus{ border:1px solid #F1C169; background-color: #FBFECD}
+#table_ofertas .input{ border:1px solid #7F9DB9;width:400px;margin:3px;padding:3px; }
+#table_ofertas .input:focus{  border:1px solid #F1C169; background-color: #FBFECD}
+#table_ofertas .textarea{border:1px solid #7F9DB9;width:400px; height:100px;margin:3px;padding:3px;}
+#table_ofertas .textarea:focus{ border:1px solid #F1C169;background-color:#FBFECD;width:500px;color:#003366;line-height:19px }
+
+
+
+#table_opciones{border:solid 1px #3C88D5; width:100%}
+#table_opciones .title{color:#FFF; font:bold 11px tahoma; background-color:#3C88D5; text-align:center; padding:3px}
+#table_opciones .button{ border:1px solid #999;border-left:1px solid #FFF;border-top:1px solid #FFF;background-color:#FFE055;margin:0 5px;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#2D4085; height:23px}
+#table_opciones .button:hover{ background-color:#66CCCC;cursor:pointer;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif;}

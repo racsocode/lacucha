@@ -1,0 +1,330 @@
+body,form,div,ul,li,td,th,p{margin:0; padding:0;font:normal 11px 'tahoma', Verdana, Helvetica, Arial, sans-serif}
+a{ color:#2874B9;text-decoration:none; }
+img{ border:0 }
+input, select, textarea{ font:normal 11px Verdana, Arial, Helvetica, sans-serif;color:#222;}
+fieldset{ border:1px solid #ADC2E9; width:98%  }
+legend{ font:bold 15px Trebuchet MS, Arial, Helvetica, sans-serif;color:#3757A0;letter-spacing:0.02em}
+legend a{font-weight:bold;}
+p{ font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;line-height:17px;margin:5px 0;color:#222;word-spacing:0.2em }
+label{ color:#333;font:normal 11px Verdana, Arial, Helvetica, sans-serif;float:left;width:30%;margin-right:0.5em;padding-top:0.5em;text-align:right;}
+select.atr{ width:200px;}
+/*Contenedor Principal*/
+#pagina{ width:100%;background-color:#F4F4F4;margin:0 auto;height:auto;}
+#pagina .cabecera{ height:0px;background:#fff;font-size:170.1%;color: #006699;text-align:left;line-height:30px}
+#pagina .cabecera span{padding:8px; position:relative;top:-10px}
+
+/*Menu Superior*/
+#pagina .menu-superior{width:100%;border-bottom:1px solid #7EB0E3;height:20px;position:absolute;background-color:#ECF5FF;border-top:1px solid #CCC; z-index:88}
+#pagina .menu-superior li{float:left;width:auto;list-style:none;text-align:left;cursor:pointer;z-index:1000;font:bold 12px 'Trebuchet MS';color:#222;text-indent:1em; padding:0 34px 2px 34px}
+#pagina .menu-superior li a{ font:bold 11px Arial, Helvetica, sans-serif }
+#pagina .menu-superior li a:hover{color:#333}
+#pagina .menu-superior li ul{ display:none;position:absolute;height:auto;overflow:hidden;top:20px;border-right:1px solid #7EB0E3;border-bottom:0px solid #7EB0E3;}
+#pagina .menu-superior li:hover ul{ display:block;width:160px;filter:alpha(opacity=90);-moz-opacity:.90;opacity:.90;background-color:#ECF5FF }
+#pagina .menu-superior li ul li{border-bottom:1px solid #7EB0E3;display:block;height:24px;border-left:1px solid #7EB0E3;width:180px;color:#015181; padding:0}
+#pagina .menu-superior li ul li a{ border:0;display:block;height:24px;text-align:left;padding-top:3px;width:180px;color:#111}
+#pagina .menu-superior li ul li a:hover{display:block;height:24px;padding-top:3px;width:180px;color:#015181}
+#pagina .cuerpo{height:auto;width:100%;background:#fff;overflow:hidden; clear:both;background-color:#fff}
+/*Menu Izquierdo*/
+#pagina .left{ width:8%;text-align:center;color:#ccc;float:left;height:650px;overflow:hidden;margin:28px 6px 0 6px;border:8px solid #ECF5FF;background-color:#fff; }
+#pagina .left li { width:80%;height:auto;margin:10px auto;display:block;border:1px solid #7EB0E3; font:bold 10px Verdana, Arial, Helvetica, sans-serif }
+#pagina .left li a{ width:77%;border:6px solid #ECF5FF;background:#FFF;text-align:center;text-decoration:none;height:auto;padding:4px;display:block }
+#pagina .left li a:hover{background:#9AC9F8;color:#fff;}
+#pagina .left li img{ text-align:center;}
+#pagina .cuerpo select{ width:240px; }
+#pagina .logo{ margin-left:0px;position:relative;bottom:-390px;width:110px;border:1px solid #C6E0FB;filter:alpha(opacity=10);-moz-opacity:.10;opacity:.10;}
+
+/*Cuerpo*/
+#pagina .contenido{float:left;width:60%;margin-top:28px;height:650px;border:8px solid #ECF5FF;background-color:#fff;text-align:left;}
+#pagina .navegacion{font:bold 15px Trebuchet MS, Arial, Helvetica, sans-serif;color:#3757A0;letter-spacing:0.02em; padding-left:10px}
+
+/*Lado Derecho*/
+#pagina .funcionalidad{float:left;width:26%;margin-top:28px;height:650px;border:8px solid #ECF5FF;background-color:#fff;overflow-y:auto; margin-left:5px}
+
+/*Parte Inferior*/
+#bottom{height:16px;color:#777;text-align:center;line-height:16px;position:relative; bottom:0;width:100%;}
+#bottom a{color:#777;}
+#bottom a:hover{color:#444;}
+
+#resumen_inicio{ width:60%; margin:100px auto; height:100px}
+#error{ border:1px dotted #FF0000;color:#FF0000;background-color:#FFFFCC;font:normal 12px Arial, Helvetica, sans-serif;padding:4px }
+#navegador{ border:1px dotted #660;color:#FF0000;background-color:#FFFFCC;font:normal 12px Arial, Helvetica, sans-serif;padding:3px 4px 3px 4px; color:#333 }
+
+.texto_enviar {color:#fff;font:normal 10px Arial, Helvetica, sans-serif;text-indent:10px;background:#3597C6;height:45px;line-height:3.4em}
+.caja{width:310px;margin-left:10px;border:1px solid #CCC}
+.msn{margin-top:20px;font:normal 12px Arial, Helvetica, sans-serif;color:#999}
+
+#info_user{position:absolute; right:0px; top:0px; z-index:88; font:bold 11px "Trebuchet MS", Arial, Helvetica, sans-serif; padding-top:3px}
+#info_user .user{ background:url(../../imgs/icons/user.png) no-repeat; padding:0px 0 2px 20px; display:block; float:left; color:#069}
+#info_user .tienda{ background:url(../../imgs/icons/tienda.png) no-repeat; padding:0px 0 2px 18px; display:block; float:left; margin:0px 18px; color:#069}
+
+/*DOCUMENTOS*/
+
+#documents{ margin-top:14px}
+#documents span{ color:#333;font:normal 11px Verdana, Arial, Helvetica, sans-serif;}
+#documents .e-center{ text-align:center}
+#listado .e-center{ text-align:center}
+
+#detail{   color:#444; background:#7F9DB9}
+#detail .titulo{ height:20px;font:bold 11px Verdana, Arial, Helvetica, sans-serif; background:#FDFEFF;}
+#detail .titulo a{ color:#444; background:url(../../imgs/order.gif) no-repeat 0 -20px;}
+#detail .titulo a.asc{ background-position:right 6px; padding-right:10px}
+#detail .titulo a.desc{background-position:right -6px; padding-right:10px}
+
+#detail .fila1{ background-color:#E6E6FE;padding-top:3px}
+#detail .fila1:hover{ background-color: #F2F583}
+#detail .fila1 td{padding-top:2px}
+/*#listado .fila1:hover img{ padding-left:3px;filter:alpha(opacity=99);-moz-opacity:.99;opacity:.99}*/
+#detail .fila2{background-color:#fff;padding-top:3px}
+#detail .fila2:hover{background-color:#F2F583}
+#detail .fila2 td{padding-top:2px}
+/*#listado .fila2:hover img{ padding-left:3px;filter:alpha(opacity=99);-moz-opacity:.99;opacity:.99}*/
+#detail td{ padding-left:2px; cursor:pointer}
+
+
+
+.materiales { display:none; height:200px; overflow-x:hidden; overflow-y:auto; position:relative; width:250px; background:#FFF; z-index:88}
+.materiales li{height:14px;width:98%;background-color:#EDF4FE; display:block;border-bottom:1px dotted #CCCCCC;height:auto;list-style:none outside none;
+overflow:hidden;padding:3px; }
+.materiales li a{ display:block; text-decoration:none}
+.materiales li:hover{ display:block; background-color: #FFFF66}
+.select-materiales:hover .materiales{ display:block; top:-14px; left:0; border:1px solid #C9D6F5 }
+.select-materiales{position:absolute;width:180px; left:20px; top:-8px; text-align:left;}
+.ch{ position:relative; top:2px}
+.fr{ float:right;}
+
+.loading{ position:absolute; display:none}
+.e-Abierto{ color:#C30}
+.e-Cerrado{ color:#060}
+.e-Anulado{ color:#900}
+#documents .rpt{ font:normal 11px Verdana, Geneva, sans-serif; color:#000}
+
+.text-observacion{ border:1px solid #7F9DB9; width:100%; margin:0 auto 0 auto; padding:5px}
+#vaciar-sistema{ text-align:center}
+#vaciar-sistema a{ font:bold 13px tahoma; color:#27722A; display:block; background:url(../../imgs/icons/empty.png) no-repeat; width:84px; height:64px; padding:20px 0 0 60px}
+
+.myBlurredClass{ font-style:italic; color:#888}
+.filters{ padding:5px; width:98%}
+.filters select{border:1px solid #7F9DB9;width:400px;margin:3px;padding:3px;}
+.filters select:focus{ border:1px solid #F1C169; background-color: #FBFECD}
+.filters .input{ border:1px solid #7F9DB9;width:400px;margin:3px;padding:3px; }
+.filters .input-auto{ border:1px solid #7F9DB9;margin:3px;padding:3px; }
+.filters .input:focus{  border:1px solid #F1C169; background-color: #FBFECD}
+.filters .btn_date{border:1px solid #7F9DB9;width:25px; margin:3px;padding:3px; margin-left:0}
+.filters .button{ border:1px solid #999;border-left:1px solid #FFF;border-top:1px solid #FFF;background-color:#FFE055;margin:0 5px;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#2D4085; float:right; height:23px}
+.filters .button:hover{ background-color:#66CCCC;cursor:pointer;font:bold 11px 'Trebuchet MS', Arial, Helvetica, sans-serif;}
+.filters .input-auto{ border:1px solid #7F9DB9;margin:3px;padding:3px; }
+.filters .input-auto:focus{  border:1px solid #F1C169; background-color: #FBFECD}
+.title-modulo{ background:#ECF5FF; padding:0px 0 3px 0}
+.title-modulo a{ line-height:2em; color:#000; font-weight:bold; font-variant:small-caps}
+
+.bg-title-modulo{ background:#ECF5FF; overflow:hidden}
+
+#dialog-confirm{ display:none}
+#dialog-confirm-delete{ display:none}
+.edit-cant{ padding:8px;}
+.edit-cant img{ vertical-align:middle}
+
+.print{position:absolute; left:50px; top:8px}
+.edite{ background:url(../../imgs/icons/editar_cant.png) 4px center no-repeat; padding-left:12px}
+
+.ui-autocomplete {
+	max-height: 126px;
+	overflow-y: auto;
+}
+* html .ui-autocomplete {
+	height: 126px;
+}
+
+
+.documentos{
+-moz-border-radius:1em 1em 1em 1em;
+background-color:#fff;
+border:8px solid #ECF5FF;
+font-size:10px;
+margin:1em 0;
+padding:0 0 20px 0;
+width:96%;
+height:570px; 
+position:relative;
+margin:10px auto 0 auto;
+}
+.montos{ position:absolute; bottom:0;background:#ECF5FF; padding:2px 2px 2px 2px ; width:100%; text-align:right; font-size:13px}
+.documentos h2{ font:normal 13px tahoma; color:#4E74B9; margin:0; background:#ECF5FF; padding-bottom:6px}
+
+.select-documento{ background:url(../../imgs/arrow-d.png) no-repeat right top; padding-right:20px; padding-left:15px; position:relative; padding-bottom:8px; cursor:pointer}
+.select-documento ul{ display:none; position:absolute; width:190px; border:1px solid #CCC; z-index:888; left:0px; top:19px; background:#FFF; list-style:none; padding:4px}
+.select-documento ul li a{ display:block;}
+.select-documento ul li a:hover{ background:#FDFEC7;}
+.select-documento:hover ul{ display:block}
+.centrado{ text-align:center}
+.dataTables_processing {
+background-color:white;
+border:1px solid #DDDDDD;
+color:#999999;
+font-size:14px;
+height:30px;
+left:50%;
+margin-left:-260px;
+margin-top:-15px;
+padding:14px 0 2px;
+position:absolute;
+text-align:center;
+top:50%;
+width:250px;
+font:1.45em "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+.dataTables_processing2 {
+background-color:white;
+border:1px solid #DDDDDD;
+color:#999999;
+font-size:14px;
+height:30px;
+left:50%;
+margin-left:-120px;
+margin-top:-15px;
+padding:14px 0 2px;
+position:absolute;
+text-align:center;
+top:50%;
+width:250px;
+font:1.45em "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+
+button{ font:normal 11px "Trebuchet MS", Arial, Helvetica, sans-serif}
+.fleft{ float:left}
+#listado_filter{  text-align:right; padding:2px 0;  background:#ECF5FF; float:right}
+#listado_filter input{ border:1px solid #7F9DB9;width:200px;padding:3px; }
+#listado_filter input:focus{  border:1px solid #F1C169; background-color: #FBFECD}
+
+#content-area{ clear:both}
+#listado_info{ font:normal 10px Verdana, Geneva, sans-serif; text-align:right; color:#999}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * General page setup
+ */
+.paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+	margin:0 auto 0  auto
+}
+
+.paging_full_numbers span.paginate_button,
+ 	.paging_full_numbers span.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.paging_full_numbers span.paginate_button {
+	background-color: #ddd;
+}
+
+.paging_full_numbers span.paginate_button:hover {
+	background-color: #ccc;
+}
+
+.paging_full_numbers span.paginate_active {
+	background-color: #99B3FF;
+}
+
+table.display tr.even.row_selected td {
+	background-color: #B0BED9;
+}
+
+table.display tr.odd.row_selected td {
+	background-color: #9FAFD1;
+}
+.genera_fb{ padding:5px 0}
+.genera_fb ul{ display:none; position:absolute; list-style:none; border-left:1px solid #666; border-right:1px solid #666; border-bottom:1px solid #666; z-index:8888}
+.genera_fb ul li a{ display:block; height:20px; border-top:1px solid #666; padding:2px 0}
+.genera_fb ul li a:hover{ background:#FF9}
+.genera_fb:hover ul{ display:block; background:#FFF; width:120px;}
+
+/*TOOLTIP*/
+.tipsy { padding: 5px; font-size: 10px; position: absolute; z-index: 100000; }
+.tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+.tipsy-arrow { position: absolute; background: url('../../imgs/icons/tipsy.gif') no-repeat top left; width: 9px; height: 5px; }
+.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -4px; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; }
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; }
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -4px; background-position: bottom left; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; background-position: bottom left; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; background-position: bottom left; }
+.tipsy-e .tipsy-arrow { top: 50%; margin-top: -4px; right: 0; width: 5px; height: 9px; background-position: top right; }
+.tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 0; width: 5px; height: 9px; }
+
+#iframe {
+	border:1px solid #CCCCCC;
+	padding:10px !important;
+	width:94%;
+	overflow:hidden;
+	margin:0 auto 0 auto
+}
+#iframe .ileft_img {
+	float:left;
+	height:20px;
+	width:70%;
+}
+
+#iframe .iright_img {
+	color:#006699;
+	cursor:pointer;
+	float:right;
+	height:20px;
+	width:19%;
+}
+
+#iframe .iright_img button {
+	width:160px
+}
+#images {
+	height:auto;
+	width:95%;
+	margin:10px auto 0 auto;
+	border:1px solid #CCCCCC;
+	padding:10px
+}
+
+#images .lefti {
+	border:1px solid #CCCCCC;
+	float:left;
+	height:auto;
+	margin-right:2px;
+	text-align:left;
+	width:58%;
+}
+#images .righti {
+	border:1px solid #CCCCCC;
+	float:right;
+	height:390px;
+	width:38%;
+	text-align:center;
+}
+#images .bottom {
+	clear:both;
+	padding-top:10px;
+	vertical-align:bottom;
+	width:90%;
+	margin:0 auto 0 auto
+}
+#images .bottom span {
+	color:#0099CC;
+	cursor:pointer;
+	font-weight:bold;
+}
+p#msg_delete {
+	color:#FF0000;
+	padding:10px;
+	vertical-align:text-bottom;
+}
+
+.img_categoria img{ border:2px outset #999}
