@@ -74,7 +74,12 @@ return array(
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => array(
-            'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/layout'        => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/footer'        => __DIR__ . '/../view/layout/partial/footer.phtml',
+            'layout/panel_left'    => __DIR__ . '/../view/layout/partial/panel_left.phtml',
+            'layout/panel_right'   => __DIR__ . '/../view/layout/partial/panel_right.phtml',
+            'layout/menu'          => __DIR__ . '/../view/layout/partial/menu.phtml',
+            'layout/banner'          => __DIR__ . '/../view/layout/partial/banner.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',

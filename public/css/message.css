@@ -1,4 +1,0 @@
-/* CSS Document */
-#msg {display:none; position:absolute; z-index:1900; background:url(../imgs/msg_arrow.gif) left center no-repeat; padding-left:7px;font:normal 11px tahoma; color:#fff;}
-#msgcontent {display:block; background:#1568A7; border:2px solid #7CB0C0; border-left:none; padding:5px; min-width:150px; max-width:250px;}
-
