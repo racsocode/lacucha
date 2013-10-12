@@ -59,11 +59,13 @@ padding:10px 10px 0 0;
 #menu_tab{
 width:1000px;
 height:36px;
-background:url(../imgs/menu_bg.gif) repeat-x;
+background:#be1522;
 }
 ul.menu {
 list-style-type:none; float:left; display:block; width:982px; 
-margin:0px; padding:0px;background:url(../imgs/menu_bg.gif) repeat-x;}
+margin:0px; 
+padding:0px;
+background:url(../imgs/menu_bg.gif) repeat-x;}
 
 ul.menu li {
 display:inline;
