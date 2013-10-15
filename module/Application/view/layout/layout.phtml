@@ -2,12 +2,17 @@
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <?php echo $this->headTitle('ZF2') ?>
-    <?php echo $this->headMeta()->appendName('keywords', 'framework, PHP, productivity');?>
-    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
-    <?php echo $this->headLink()->prependStylesheet($this->basePath().'/css/style.css') ?>
-    <?php echo $this->headScript()->appendFile($this->basePath().'/js/boxOver.js') ?>
+    <?php
+    echo $this->headMeta()->setCharset('UTF-8');
+    echo $this->headTitle('ZF2');
+    echo $this->headMeta()->appendName('keywords', 'framework, PHP, productivity');
+    echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
+    echo $this->headLink()->prependStylesheet($this->basePath().'/css/style.css');
+
+    echo $this->headScript()->appendFile($this->basePath().'/js/boxOver.js') ;
+    //Establecer una meta de refresco durante 3 segundos a una nueva url: 
+    //echo $this->headMeta()->appendHttpEquiv ( 'Refresh' ,'3, URL = http://www.some.org/some.html ' );
+    ?>
   </head>
   <body>
     <div id="main_container">
@@ -18,7 +23,7 @@
         <div id="menu_tab">
           <?php echo $this->partial('layout/menu') ; ?>
         </div>
-        <div class="crumb_navigation"> Navigation: <span class="current">Home</span> </div>
+        <div class="crumb_navigation">Navigation: <span class="current">Home</span> </div>
         <div class="left_content">
           <?php echo $this->partial('layout/panel_left') ; ?>
         </div>
