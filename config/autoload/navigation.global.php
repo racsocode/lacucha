@@ -135,12 +135,3 @@ return array( // ToDO make it dynamic - comes from the DB
          ),
      ),
 );
-
-/*
-action	String	NULL	Action name to use when generating href to the page.
-controller	String	NULL	Controller name to use when generating href to the page.
-params	Array	array()	User params to use when generating href to the page.
-route	String	NULL	Route name to use when generating href to the page.
-routeMatch	Zend\Mvc\Router\RouteMatch	NULL	RouteInterface matches used for routing parameters and testing validity.
-router	Zend\Mvc\Router\RouteStackInterface	NULL	Router for assembling URLs
-*/
