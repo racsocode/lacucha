@@ -21,7 +21,7 @@ return array(
             'login' => array(
                 'type'    => 'Segment',
                 'options' => array(
-                    'route'    => '/admin/cuenta[/][:action][/:id]',
+                    'route'    => '/admin[/][:action][/:id]',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Admin\Controller',
                         'controller'    => 'Account',
@@ -33,7 +33,7 @@ return array(
             'admin' => array(
                 'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/admin[/][:action][/:id]',
+                    'route'    => '/admin/index[/][:action][/:id]',
                     'constraints' => array(
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id'     => '[0-9]+',
